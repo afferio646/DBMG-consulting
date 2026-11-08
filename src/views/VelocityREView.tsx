@@ -5,6 +5,7 @@
 
 import React, { useState } from 'react';
 import { NavTab } from '../types.ts';
+import velocityPropertyImage from '../assets/images/velocity_re_property_1793996296973.jpg';
 import { 
   ShieldCheck, 
   Lock, 
@@ -99,12 +100,12 @@ export const VelocityREView: React.FC<VelocityREViewProps> = ({ onTabChange }) =
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           <div className="lg:col-span-6 relative">
             <div className="rounded-xl overflow-hidden border border-slate-200 shadow-xl bg-slate-100">
-              <img
-                src="/src/assets/images/velocity_re_property_1793996296973.jpg"
-                alt="Velocity RE Luxury Architectural Property Acquisition"
-                className="w-full h-[400px] object-cover"
-                loading="lazy"
-                referrerPolicy="no-referrer"
+             <img 
+               src={velocityPropertyImage} 
+               alt="Velocity RE Luxury Architectural Property Acquisition" 
+               className="w-full h-[400px] object-cover" 
+               loading="lazy" 
+               referrerPolicy="no-referrer" 
               />
               <div className="absolute inset-0 bg-gradient-to-t from-brandNavy/80 via-transparent to-transparent" />
               <div className="absolute bottom-4 left-4 right-4 p-4 bg-white/95 backdrop-blur-md rounded border border-white/40 shadow text-brandNavy flex items-center justify-between">
