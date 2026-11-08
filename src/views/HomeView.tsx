@@ -5,6 +5,7 @@
 
 import React from 'react';
 import { NavTab } from '../types.ts';
+import heroImage from '../assets/images/dbmg_corporate_hero_1793996283367.jpg';
 import { 
   ArrowUpRight, 
   TrendingUp, 
@@ -98,12 +99,12 @@ export const HomeView: React.FC<HomeViewProps> = ({ onTabChange }) => {
             {/* Right Media Column */}
             <div className="lg:col-span-5 relative">
               <div className="relative rounded-lg overflow-hidden border border-slate-200 shadow-xl bg-slate-100">
-                <img
-                  src="/src/assets/images/dbmg_corporate_hero_1793996283367.jpg"
-                  alt="DBMG Consulting Strategic Advisory Boardroom"
-                  className="w-full h-[420px] object-cover"
-                  loading="eager"
-                  referrerPolicy="no-referrer"
+                <img 
+                   src={heroImage} 
+                   alt="DBMG Consulting Strategic Advisory Boardroom" 
+                   className="w-full h-[420px] object-cover" 
+                   loading="eager" 
+                   referrerPolicy="no-referrer" 
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-brandNavy/80 via-brandNavy/20 to-transparent" />
                 
