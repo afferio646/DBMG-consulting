@@ -1,6 +1,6 @@
 import React from 'react';
 
-const AiSolutions = () => {
+export const AiSolutions = () => {
   return (
     <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen font-sans">
       {/* Hero Section */}
@@ -96,4 +96,3 @@ const AiSolutions = () => {
   );
 };
 
-export default AiSolutions;
