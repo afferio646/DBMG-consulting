@@ -1,98 +1,125 @@
 import React from 'react';
 
-export const AiSolutions = () => {
+export function AiSolutions() {
   return (
-    <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen font-sans">
-      {/* Hero Section */}
-      <section className="py-20 px-6 max-w-7xl mx-auto text-center">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6">
-          Engineering Custom AI & <span className="text-blue-600 dark:text-blue-400">Micro-Utilities</span> for Modern Enterprise
-        </h1>
-        <p className="text-lg md:text-xl max-w-3xl mx-auto text-gray-600 dark:text-gray-300">
-          Transforming complex operational friction into streamlined, automated workflows through proprietary architecture and rapid development frameworks.
-        </p>
-      </section>
+    <div className="min-h-screen bg-slate-50 text-slate-900 py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto space-y-16">
+        
+        {/* Hero Section */}
+        <div className="text-center space-y-4 max-w-4xl mx-auto pt-6">
+          <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900">
+            Engineering AI Tools, Custom Apps and Micro-Utilities for Businesses
+          </h1>
+          <p className="text-xl text-slate-600">
+            Transforming complex operational friction into streamlined, automated workflows through proprietary architecture and rapid development frameworks.
+          </p>
+        </div>
 
-      {/* Proprietary Development & PWAs */}
-      <section className="py-16 bg-gray-50 dark:bg-gray-800">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl font-bold mb-4">Proprietary Development & Progressive Web Utilities</h2>
-              <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                We rapidly prototype and deploy custom Progressive Web Utilities (PWAs) tailored to your exact operational workflows. Our architecture prioritizes speed, cross-platform accessibility, and seamless integration with your existing business tech stack.
-              </p>
-              <ul className="space-y-3">
-                {['High-Performance Architecture', 'Cross-Platform Accessibility', 'Seamless Tech Stack Integration'].map((item, idx) => (
-                  <li key={idx} className="flex items-center text-gray-700 dark:text-gray-200">
-                    <svg className="w-5 h-5 text-blue-600 dark:text-blue-400 mr-3" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path></svg>
-                    {item}
-                  </li>
-                ))}
-              </ul>
+        {/* Section 1: Proprietary Development & PWAs */}
+        <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-8 lg:p-12 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="space-y-6">
+            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900">
+              Proprietary Development & Progressive Web Utilities
+            </h2>
+            <p className="text-slate-600 leading-relaxed">
+              We rapidly prototype and deploy custom Progressive Web Utilities (PWAs) tailored to your exact operational workflows. Our architecture prioritizes speed, cross-platform accessibility, and seamless integration with your existing business tech stack.
+            </p>
+            <ul className="space-y-3">
+              <li className="flex items-center space-x-3 text-slate-700 font-medium">
+                <span className="h-5 w-5 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-xs">✓</span>
+                <span>High-Performance Architecture</span>
+              </li>
+              <li className="flex items-center space-x-3 text-slate-700 font-medium">
+                <span className="h-5 w-5 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-xs">✓</span>
+                <span>Cross-Platform Accessibility</span>
+              </li>
+              <li className="flex items-center space-x-3 text-slate-700 font-medium">
+                <span className="h-5 w-5 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-xs">✓</span>
+                <span>Seamless Tech Stack Integration</span>
+              </li>
+            </ul>
+          </div>
+
+          {/* Sharp Code-Rendered PWA Architecture Diagram Replacement */}
+          <div className="bg-slate-900 rounded-xl p-6 text-white shadow-inner border border-slate-800 space-y-4">
+            <div className="flex items-center justify-between border-b border-slate-800 pb-3">
+              <span className="text-xs font-mono uppercase tracking-wider text-blue-400">Architecture Flow</span>
+              <span className="flex h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
             </div>
-            {/* Placeholder for PWA diagram/graphic */}
-            <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-xl p-8 border border-gray-100 dark:border-gray-700">
-              <div className="aspect-w-16 aspect-h-9 bg-gray-100 dark:bg-gray-800 rounded-lg flex items-center justify-center min-h-[250px]">
-                 <span className="text-gray-400 dark:text-gray-500 font-semibold">PWA Architecture Diagram</span>
+            <div className="grid grid-cols-3 gap-3 text-center py-4">
+              <div className="bg-slate-800/80 p-3 rounded-lg border border-slate-700">
+                <div className="text-xs text-slate-400 font-mono">Input</div>
+                <div className="text-sm font-semibold mt-1">Workflows</div>
+              </div>
+              <div className="bg-blue-600/20 p-3 rounded-lg border border-blue-500/30 flex items-center justify-center">
+                <div className="text-xs font-bold text-blue-400">Proprietary Core</div>
+              </div>
+              <div className="bg-slate-800/80 p-3 rounded-lg border border-slate-700">
+                <div className="text-xs text-slate-400 font-mono">Output</div>
+                <div className="text-sm font-semibold mt-1">Micro-App</div>
               </div>
             </div>
+            <div className="bg-slate-950 p-4 rounded-lg font-mono text-xs text-slate-400 space-y-1.5 border border-slate-900">
+              <p className="text-emerald-400">$ dmbg-engine --deploy --pwa</p>
+              <p>&gt; Initializing rapid build sequence...</p>
+              <p>&gt; Compiling modular operational utilities... [OK]</p>
+              <p className="text-blue-400">&gt; Status: Live & Optimized for Enterprise.</p>
+            </div>
           </div>
         </div>
-      </section>
 
-      {/* Solution Areas & Operational Efficiency */}
-      <section className="py-20 max-w-7xl mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center mb-12">Solution Areas & Operational Efficiency</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Card 1 */}
-          <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 p-8 hover:shadow-lg transition-shadow duration-300">
-            <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-lg flex items-center justify-center mb-6">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-            </div>
-            <h3 className="text-xl font-bold mb-3">Business Development & Growth</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              Automated lead intelligence, targeted prospecting systems, and streamlined qualification workflows to scale your outreach.
-            </p>
+        {/* Section 2: Solution Areas */}
+        <div className="space-y-8">
+          <div className="text-center max-w-2xl mx-auto">
+            <h2 className="text-3xl font-bold tracking-tight text-slate-900">
+              Solution Areas & Operational Efficiency
+            </h2>
           </div>
-          {/* Card 2 */}
-          <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 p-8 hover:shadow-lg transition-shadow duration-300">
-             <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-lg flex items-center justify-center mb-6">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 space-y-4 hover:shadow-md transition-shadow">
+              <div className="h-10 w-10 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center font-bold">01</div>
+              <h3 className="text-xl font-bold text-slate-900">Business Development & Growth</h3>
+              <p className="text-slate-600 text-sm leading-relaxed">
+                Automated lead intelligence, targeted prospecting systems, and streamlined qualification workflows to scale your outreach.
+              </p>
             </div>
-            <h3 className="text-xl font-bold mb-3">Operations & Workflow Automation</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              Intelligent micro-utilities designed to eliminate manual bottlenecks, reduce overhead, and optimize day-to-day execution.
-            </p>
-          </div>
-          {/* Card 3 */}
-          <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 p-8 hover:shadow-lg transition-shadow duration-300">
-             <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-lg flex items-center justify-center mb-6">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+
+            <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 space-y-4 hover:shadow-md transition-shadow">
+              <div className="h-10 w-10 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center font-bold">02</div>
+              <h3 className="text-xl font-bold text-slate-900">Operations & Workflow Automation</h3>
+              <p className="text-slate-600 text-sm leading-relaxed">
+                Intelligent micro-utilities designed to eliminate manual bottlenecks, reduce overhead, and optimize day-to-day execution.
+              </p>
             </div>
-            <h3 className="text-xl font-bold mb-3">Financial & Transactional Tools</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              Custom calculators, automated reporting engines, and streamlined financial data processing tools tailored to your needs.
-            </p>
+
+            <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 space-y-4 hover:shadow-md transition-shadow">
+              <div className="h-10 w-10 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center font-bold">03</div>
+              <h3 className="text-xl font-bold text-slate-900">Financial & Transactional Tools</h3>
+              <p className="text-slate-600 text-sm leading-relaxed">
+                Custom calculators, automated reporting engines, and streamlined financial data processing tools tailored to your needs.
+              </p>
+            </div>
           </div>
         </div>
-      </section>
 
-      {/* The AI-as-a-Service (ITaaS) Model */}
-      <section className="py-20 bg-blue-600 dark:bg-blue-900 text-white">
-        <div className="max-w-5xl mx-auto px-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">The Turnkey AI-as-a-Service Model</h2>
-          <p className="text-lg md:text-xl text-blue-100 mb-10 leading-relaxed">
+        {/* Section 3: AI-as-a-Service Model */}
+        <div className="bg-slate-900 text-white rounded-2xl p-8 lg:p-12 space-y-6 text-center max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold tracking-tight">The Turnkey AI-as-a-Service Model</h2>
+          <p className="text-slate-300 leading-relaxed max-w-3xl mx-auto">
             Skip the high cost, steep learning curve, and resource drain of hiring and managing internal AI teams. DBMG manages the entire lifecycle—from architecture and programming to full integration and ongoing management—allowing you to leverage advanced AI capabilities effortlessly.
           </p>
-          <div className="inline-flex items-center justify-center space-x-4">
-            <button className="bg-white text-blue-600 font-bold py-3 px-8 rounded-full hover:bg-blue-50 transition-colors shadow-lg">
+          <div className="pt-4">
+            <a 
+              href="#contact" 
+              className="inline-block bg-blue-600 hover:bg-blue-500 text-white font-semibold px-8 py-3 rounded-xl transition-colors shadow-lg"
+            >
               Discuss Your Project
-            </button>
+            </a>
           </div>
         </div>
-      </section>
+
+      </div>
     </div>
   );
-};
-
+}
