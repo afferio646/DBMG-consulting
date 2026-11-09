@@ -24,7 +24,7 @@ export default function App() {
   useEffect(() => {
     const handleHashChange = () => {
       const hash = window.location.hash.replace('#', '') as NavTab;
-      const validTabs: NavTab[] = ['home', 'about', 'industries', 'velocity-re', 'case-studies', 'contact','ai-solutions'];
+      const validTabs: NavTab[] = ['home', 'about', 'industries', 'velocity-re', 'case-studies', 'contact', 'ai-solutions'];
       if (validTabs.includes(hash)) {
         setActiveTab(hash);
       }
