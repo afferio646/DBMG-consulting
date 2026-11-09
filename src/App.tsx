@@ -13,7 +13,7 @@ import { IndustriesView } from './views/IndustriesView.tsx';
 import { VelocityREView } from './views/VelocityREView.tsx';
 import { CaseStudiesView } from './views/CaseStudiesView.tsx';
 import { ContactView } from './views/ContactView.tsx';
-import AiSolutions from './views/AiSolutions.tsx'; 
+import { AiSolutions } from './views/AiSolutions.tsx'; 
 import { ArrowUp } from 'lucide-react';
 
 export default function App() {
