@@ -13,6 +13,7 @@ import { IndustriesView } from './views/IndustriesView.tsx';
 import { VelocityREView } from './views/VelocityREView.tsx';
 import { CaseStudiesView } from './views/CaseStudiesView.tsx';
 import { ContactView } from './views/ContactView.tsx';
+import AiSolutions from './views/AiSolutions.tsx'; 
 import { ArrowUp } from 'lucide-react';
 
 export default function App() {
@@ -23,7 +24,7 @@ export default function App() {
   useEffect(() => {
     const handleHashChange = () => {
       const hash = window.location.hash.replace('#', '') as NavTab;
-      const validTabs: NavTab[] = ['home', 'about', 'industries', 'velocity-re', 'case-studies', 'contact'];
+      const validTabs: NavTab[] = ['home', 'about', 'industries', 'velocity-re', 'case-studies', 'contact''ai-solutions'];
       if (validTabs.includes(hash)) {
         setActiveTab(hash);
       }
@@ -66,6 +67,7 @@ export default function App() {
         {activeTab === 'velocity-re' && <VelocityREView onTabChange={handleTabChange} />}
         {activeTab === 'case-studies' && <CaseStudiesView onTabChange={handleTabChange} />}
         {activeTab === 'contact' && <ContactView onTabChange={handleTabChange} />}
+        {activeTab === 'ai-solutions' && <AiSolutions />}
       </main>
 
       {/* Corporate Executive Footer */}
