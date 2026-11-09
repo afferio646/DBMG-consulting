@@ -22,6 +22,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, onTabChange }) => {
     { id: 'velocity-re', label: 'Velocity RE', badge: 'Off-Market' },
     { id: 'case-studies', label: 'Case Studies' },
     { id: 'contact', label: 'Contact Us' },
+    { id: 'ai-solutions', label: 'AI Solutions' },
   ];
 
   const handleSelectTab = (tab: NavTab) => {
