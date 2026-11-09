@@ -110,17 +110,12 @@ export function AiSolutions() {
             Skip the high cost, steep learning curve, and resource drain of hiring and managing internal AI teams. DBMG manages the entire lifecycle—from architecture and programming to full integration and ongoing management—allowing you to leverage advanced AI capabilities effortlessly.
           </p>
           <div className="pt-4">
-          <button 
-  onClick={() => {
-    const contactSection = document.getElementById('contact');
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  }}
-  className="inline-block bg-blue-600 hover:bg-blue-500 text-white font-semibold px-8 py-3 rounded-xl transition-colors shadow-lg cursor-pointer"
+         <a 
+  href="#contact"
+  className="inline-block bg-blue-600 hover:bg-blue-500 text-white font-semibold px-8 py-3 rounded-xl transition-colors shadow-lg text-center cursor-pointer"
 >
   Discuss Your Project
-</button>
+</a>
           </div>
         </div>
 
