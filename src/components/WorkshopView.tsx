@@ -37,21 +37,59 @@ export function WorkshopView() {
         </div>
       </section>
 
-      {/* --- THE 3 CORE REASONS TO ATTEND --- */}
-      <section className="py-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-5xl mx-auto text-left">
-          <div className="p-5 rounded-xl bg-slate-900/80 border border-slate-800">
-            <div className="text-emerald-400 font-bold text-sm mb-1">Reason 01: The Knowledge</div>
-            <p className="text-slate-300 text-xs leading-relaxed">Master practical AI for business and learn exactly how to shift your team to everyday AI superpowers without the technical jargon.</p>
+      {/* --- WHY YOU SHOULD ATTEND (4 REASONS) --- */}
+      <section className="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div className="text-center mb-10">
+          <h2 className="text-xs font-bold tracking-widest uppercase text-emerald-400">Core Value Drivers</h2>
+          <h3 className="text-2xl sm:text-3xl font-bold text-white mt-2">Why You Should Attend</h3>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+          
+          {/* Reason 01 */}
+          <div className="p-6 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col justify-between">
+            <div>
+              <div className="text-emerald-400 font-bold text-xs uppercase tracking-wider mb-2">Reason 01: The Knowledge</div>
+              <h4 className="text-lg font-bold text-white mb-2">Master AI & Superpowers</h4>
+              <p className="text-slate-300 text-xs leading-relaxed">
+                Master practical AI for business and learn exactly how to shift your team to everyday AI superpowers without the technical jargon.
+              </p>
+            </div>
           </div>
-          <div className="p-5 rounded-xl bg-slate-900/80 border border-slate-800">
-            <div className="text-emerald-400 font-bold text-sm mb-1">Reason 02: The Free/Low-Cost PWA</div>
-            <p className="text-slate-300 text-xs leading-relaxed">Walk away with a custom-built, production-ready Mobile Progressive Web App and secure cloud database ($15k–$30k agency value) for a fraction of the cost.</p>
+
+          {/* Reason 02 */}
+          <div className="p-6 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col justify-between">
+            <div>
+              <div className="text-emerald-400 font-bold text-xs uppercase tracking-wider mb-2">Reason 02: Zero Overhead</div>
+              <h4 className="text-lg font-bold text-white mb-2">Eliminate Heavy Infrastructure</h4>
+              <p className="text-slate-300 text-xs leading-relaxed">
+                Eliminate the required infrastructure, manpower, training, implementation, and maintenance typically demanded by an in-house AI program.
+              </p>
+            </div>
           </div>
-          <div className="p-5 rounded-xl bg-slate-900/80 border border-slate-800">
-            <div className="text-emerald-400 font-bold text-sm mb-1">Reason 03: The Guarantee</div>
-            <p className="text-slate-300 text-xs leading-relaxed">Zero risk. If we don&apos;t pinpoint at least $10,000 in operational waste during your audit, get a 100% refund and keep the app anyway.</p>
+
+          {/* Reason 03 */}
+          <div className="p-6 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col justify-between">
+            <div>
+              <div className="text-emerald-400 font-bold text-xs uppercase tracking-wider mb-2">Reason 03: The Free Asset</div>
+              <h4 className="text-lg font-bold text-white mb-2">Custom Deployed App ($0 Build Cost)</h4>
+              <p className="text-slate-300 text-xs leading-relaxed">
+                Walk away with a custom-built, production-ready Mobile Progressive Web App and secure cloud database ($15k–$30k agency value) that is completely free.
+              </p>
+            </div>
           </div>
+
+          {/* Reason 04 */}
+          <div className="p-6 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col justify-between">
+            <div>
+              <div className="text-emerald-400 font-bold text-xs uppercase tracking-wider mb-2">Reason 04: Exclusive Access</div>
+              <h4 className="text-lg font-bold text-white mb-2">Strictly Limited Invitations</h4>
+              <p className="text-slate-300 text-xs leading-relaxed">
+                We are inviting a very limited number of select companies in your industry to ensure direct, hands-on configuration support.
+              </p>
+            </div>
+          </div>
+
         </div>
       </section>
 
