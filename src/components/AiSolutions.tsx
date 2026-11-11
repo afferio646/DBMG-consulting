@@ -132,6 +132,7 @@ export function AiSolutions() {
           Get Access to Workshop
         </a>
       </div>
+        
       </div>
   );
 }
