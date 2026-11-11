@@ -118,8 +118,20 @@ export function AiSolutions() {
 </a>
           </div>
         </div>
-
+ {/* --- GATEWAY TO EXCLUSIVE WORKSHOPS --- */}
+      <div className="mt-16 p-8 sm:p-10 rounded-2xl bg-gradient-to-r from-slate-900 via-emerald-950/30 to-slate-900 border border-emerald-500/40 text-center shadow-2xl">
+        <span className="text-xs font-bold tracking-widest text-emerald-400 uppercase block mb-2">Limited Availability</span>
+        <h3 className="text-2xl sm:text-3xl font-bold text-white mb-3">Join One of Our Exclusive AI Workshops</h3>
+        <p className="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto mb-6 leading-relaxed">
+          Discover how our AI-as-a-Service model eliminates heavy overhead, get your custom mobile operations app built live, and secure your business under our zero-risk guarantee.
+        </p>
+        <a 
+          href="#workshop" 
+          className="inline-block px-8 py-4 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-sm tracking-wide transition shadow-lg shadow-emerald-500/20"
+        >
+          Get Access to Workshop
+        </a>
       </div>
-    </div>
+      </div>
   );
 }
