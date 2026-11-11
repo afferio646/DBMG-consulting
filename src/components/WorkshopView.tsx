@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function WorkshopView() {
+export function WorkshopView() {
   return (
     <div className="min-h-screen bg-[#0B0F19] text-slate-100 font-sans selection:bg-emerald-500 selection:text-white">
       
