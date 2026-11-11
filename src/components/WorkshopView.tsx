@@ -5,7 +5,7 @@ export function WorkshopView() {
     <div className="min-h-screen bg-[#0B0F19] text-slate-100 font-sans selection:bg-emerald-500 selection:text-white">
       
       {/* 1. HERO SECTION (Above the Fold) */}
-      <section className="relative pt-20 pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center border-b border-slate-800">
+      <section className="relative pt-20 pb-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center border-b border-slate-800">
         <div className="inline-block mb-4 px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-semibold tracking-wide uppercase">
           Live Interactive Workshop & Custom Build Session • Strictly Capped at 20 Companies
         </div>
@@ -15,18 +15,40 @@ export function WorkshopView() {
         <p className="mt-6 text-lg sm:text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
           Wipe out field chaos, automate office data entry, and protect your profit margins by deploying custom mobile tools natively into your operations.
         </p>
-        
-        {/* The 3 Core Reasons to Attend */}
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-4 max-w-5xl mx-auto text-left">
-          <div className="p-5 rounded-xl bg-slate-900/80 border border-emerald-500/30">
+      </section>
+
+      {/* --- THE AI-AS-A-SERVICE STRATEGIC OVERVIEW --- */}
+      <section className="py-14 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+        <div className="p-8 sm:p-10 rounded-2xl bg-gradient-to-b from-slate-900 to-slate-900/60 border border-emerald-500/30 shadow-2xl">
+          <div className="text-xs font-bold tracking-widest text-emerald-400 uppercase mb-2">The DBMG Consulting AI-as-a-Service Advantage</div>
+          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">Why Companies Struggle With AI—And How We Eliminate the Guesswork</h2>
+          
+          <div className="space-y-4 text-slate-300 text-sm sm:text-base leading-relaxed">
+            <p>
+              Most companies today don’t understand AI or what tools to implement. Business leaders hesitate to spend time and money not knowing what is actually available, what will genuinely work, or what heavy infrastructure they think it takes to add AI to their business processes.
+            </p>
+            <p>
+              <strong>Our AI-as-a-Service model eliminates all of that.</strong> As your strategic AI consultants, we develop, implement, and manage those tools for you from end to end. 
+            </p>
+            <p className="text-white font-medium">
+              Through this workshop, you will gain a crystal-clear understanding of current AI capabilities, how they specifically benefit your industry&apos;s bottlenecks and manual workarounds, and how they create real superpowers for your employees—making them an even more integral, high-performing part of your business growth.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* --- THE 3 CORE REASONS TO ATTEND --- */}
+      <section className="py-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-5xl mx-auto text-left">
+          <div className="p-5 rounded-xl bg-slate-900/80 border border-slate-800">
             <div className="text-emerald-400 font-bold text-sm mb-1">Reason 01: The Knowledge</div>
             <p className="text-slate-300 text-xs leading-relaxed">Master practical AI for business and learn exactly how to shift your team to everyday AI superpowers without the technical jargon.</p>
           </div>
-          <div className="p-5 rounded-xl bg-slate-900/80 border border-emerald-500/30">
+          <div className="p-5 rounded-xl bg-slate-900/80 border border-slate-800">
             <div className="text-emerald-400 font-bold text-sm mb-1">Reason 02: The Free/Low-Cost PWA</div>
             <p className="text-slate-300 text-xs leading-relaxed">Walk away with a custom-built, production-ready Mobile Progressive Web App and secure cloud database ($15k–$30k agency value) for a fraction of the cost.</p>
           </div>
-          <div className="p-5 rounded-xl bg-slate-900/80 border border-emerald-500/30">
+          <div className="p-5 rounded-xl bg-slate-900/80 border border-slate-800">
             <div className="text-emerald-400 font-bold text-sm mb-1">Reason 03: The Guarantee</div>
             <p className="text-slate-300 text-xs leading-relaxed">Zero risk. If we don&apos;t pinpoint at least $10,000 in operational waste during your audit, get a 100% refund and keep the app anyway.</p>
           </div>
@@ -34,7 +56,7 @@ export function WorkshopView() {
       </section>
 
       {/* 2. OPERATIONAL DIAGNOSTICS & BOTTLENECKS */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-slate-800">
         <div className="text-center mb-12">
           <h2 className="text-xs font-bold tracking-widest uppercase text-emerald-400">Operational Diagnostics</h2>
           <h3 className="text-2xl sm:text-3xl font-bold text-white mt-2">Where Your Business Bleeds Margin Daily</h3>
