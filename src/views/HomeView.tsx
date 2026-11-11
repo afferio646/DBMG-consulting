@@ -285,7 +285,117 @@ export const HomeView: React.FC<HomeViewProps> = ({ onTabChange }) => {
           </div>
         </div>
       </section>
+      {/* --- TRUSTED BY CLIENTS & ENTERPRISE PARTNERS --- */}
+<section className="py-16 bg-white border-y border-slate-100">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="text-center mb-12">
+      <h3 className="text-xs font-semibold tracking-wider text-slate-400 uppercase">
+        Enterprise Pedigree & Trusted Client Roster
+      </h3>
+      <p className="mt-2 text-2xl font-bold text-slate-900">
+        Partnering with Industry Leaders and High-Growth Innovators
+      </p>
+    </div>
 
+    {/* Logo Grid */}
+    <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 items-center justify-items-center opacity-85">
+      
+      {/* Firestone */}
+      <div className="p-4 flex items-center justify-center grayscale hover:grayscale-0 transition duration-300">
+        <span className="text-xl font-black tracking-tight text-red-600 font-serif">Firestone</span>
+      </div>
+
+      {/* P&G */}
+      <div className="p-4 flex items-center justify-center grayscale hover:grayscale-0 transition duration-300">
+        <span className="text-2xl font-bold italic tracking-tighter text-blue-800 font-serif">P&G</span>
+      </div>
+
+      {/* Office Depot / OfficeMax */}
+      <div className="p-4 flex items-center justify-center grayscale hover:grayscale-0 transition duration-300">
+        <div className="bg-red-700 text-white px-3 py-1.5 rounded-sm text-center font-bold text-xs tracking-tight shadow-sm">
+          Office DEPOT <br/><span className="text-[10px] font-normal">OfficeMax</span>
+        </div>
+      </div>
+
+      {/* Disney */}
+      <div className="p-4 flex items-center justify-center grayscale hover:grayscale-0 transition duration-300">
+        <span className="text-2xl font-semibold tracking-tight text-blue-600" style={{ fontFamily: 'cursive' }}>Disney</span>
+      </div>
+
+      {/* Grace */}
+      <div className="p-4 flex items-center justify-center grayscale hover:grayscale-0 transition duration-300">
+        <div className="text-center">
+          <span className="text-lg font-bold tracking-widest text-emerald-600">GRACE</span>
+          <p className="text-[9px] text-slate-400 tracking-tight">Talent | Technology | Trust</p>
+        </div>
+      </div>
+
+      {/* Kelley / Entrematic */}
+      <div className="p-4 flex items-center justify-center grayscale hover:grayscale-0 transition duration-300">
+        <div className="text-center">
+          <span className="text-xs font-bold bg-green-700 text-white px-2 py-0.5 rounded-t-sm inline-block">Kelley</span>
+          <div className="text-[10px] font-bold tracking-widest text-slate-800 border-t border-slate-800 pt-0.5">ENTRE/MATIC</div>
+        </div>
+      </div>
+
+      {/* agr */}
+      <div className="p-4 flex items-center justify-center grayscale hover:grayscale-0 transition duration-300">
+        <span className="text-xl font-bold tracking-tight text-lime-600 lowercase">c<span className="text-slate-800">agr</span></span>
+      </div>
+
+      {/* Techadox */}
+      <div className="p-4 flex items-center justify-center grayscale hover:grayscale-0 transition duration-300">
+        <div className="text-center">
+          <span className="text-xs font-bold tracking-widest text-slate-800">TECHADOX</span>
+          <p className="text-[8px] text-slate-400 tracking-tight">Field Technology. Connected.</p>
+        </div>
+      </div>
+
+      {/* Brio */}
+      <div className="p-4 flex items-center justify-center grayscale hover:grayscale-0 transition duration-300">
+        <span className="text-xl font-light tracking-wide text-slate-800">Brio</span>
+      </div>
+
+      {/* FinMkt */}
+      <div className="p-4 flex items-center justify-center grayscale hover:grayscale-0 transition duration-300">
+        <span className="text-lg font-bold tracking-tight text-teal-600">Fin<span className="text-slate-800">Mkt</span></span>
+      </div>
+
+      {/* Megamet Industries */}
+      <div className="p-4 flex items-center justify-center grayscale hover:grayscale-0 transition duration-300">
+        <div className="text-center">
+          <span className="text-xs font-black tracking-wider text-slate-900 block">MEGAMET</span>
+          <span className="text-[8px] tracking-widest text-slate-500">INDUSTRIES</span>
+        </div>
+      </div>
+
+      {/* Midland-Guardian Co */}
+      <div className="p-4 flex items-center justify-center grayscale hover:grayscale-0 transition duration-300">
+        <div className="text-center">
+          <span className="text-[9px] text-slate-500 block">Midland-Guardian Co</span>
+          <div className="w-5 h-5 mx-auto mt-1 bg-gradient-to-tr from-blue-600 to-red-600 rounded-sm"></div>
+        </div>
+      </div>
+
+      {/* PhyMed */}
+      <div className="p-4 flex items-center justify-center grayscale hover:grayscale-0 transition duration-300">
+        <div className="flex items-center space-x-1">
+          <div className="w-3 h-3 rounded-full bg-blue-600"></div>
+          <span className="text-sm font-bold text-slate-800">PhyMed</span>
+        </div>
+      </div>
+
+      {/* Core Software Technologies */}
+      <div className="p-4 flex items-center justify-center grayscale hover:grayscale-0 transition duration-300">
+        <div className="text-center">
+          <span className="text-xs font-extrabold tracking-widest text-slate-800">CORE</span>
+          <p className="text-[7px] text-slate-400">SOFTWARE TECHNOLOGIES INC.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
       {/* Velocity RE Sub-Brand Spotlight */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="rounded-xl overflow-hidden bg-gradient-to-r from-brandNavy to-brandBlue text-white shadow-xl border border-slate-800 p-8 sm:p-12 lg:p-16">
