@@ -10,7 +10,8 @@ export type NavTab =
   | 'velocity-re' 
   | 'case-studies' 
   | 'contact'
-  |'ai-solutions';
+  | 'ai-solutions'
+  | 'workshop';
 
 export interface CaseStudyData {
   id: 'tab-a' | 'tab-b' | 'tab-c' | 'tab-d';
