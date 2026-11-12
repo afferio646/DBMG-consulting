@@ -34,29 +34,29 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, onTabChange }) => {
   return (
     <header className="sticky top-0 z-50 w-full bg-brandNavy text-white border-b border-slate-800 shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20 gap-8">
+        <div className="flex items-center justify-between h-20 gap-3 xl:gap-6">
           {/* Zone 1: Brand Wordmark */}
           <button
             onClick={() => handleSelectTab('home')}
-            className="flex items-center gap-3 text-left group focus:outline-none focus-visible:ring-2 focus-visible:ring-brandBlue rounded-sm shrink-0"
+            className="flex items-center gap-2.5 text-left group focus:outline-none focus-visible:ring-2 focus-visible:ring-brandBlue rounded-sm shrink-0 cursor-pointer"
           >
             <img
               src="/assets/aistudio/dbmg_logo_part_70be1000.PNG"
               alt="DBMG Consulting Logo"
-              className="w-10 h-10 rounded object-contain shadow-sm group-hover:brightness-105 transition-all"
+              className="w-9 h-9 xl:w-10 xl:h-10 rounded object-contain shadow-sm group-hover:brightness-105 transition-all"
             />
             <div className="flex flex-col">
-              <span className="text-xl font-extrabold tracking-tight text-white whitespace-nowrap">
+              <span className="text-base xl:text-xl font-extrabold tracking-tight text-white whitespace-nowrap">
                 DBMG <span className="font-light text-slate-300">CONSULTING</span>
               </span>
-              <span className="text-[10px] tracking-widest text-slate-400 font-mono uppercase">
+              <span className="text-[9px] xl:text-[10px] tracking-widest text-slate-400 font-mono uppercase whitespace-nowrap">
                 Advisory &amp; Strategy
               </span>
             </div>
           </button>
 
           {/* Zone 2: Navigation Links (Desktop) */}
-          <nav className="hidden lg:flex items-center gap-1 xl:gap-2 text-sm font-medium">
+          <nav className="hidden lg:flex items-center gap-0.5 xl:gap-1 font-medium">
             {navItems.map((item) => {
               const isActive = activeTab === item.id;
               const isVelocity = item.id === 'velocity-re';
@@ -65,33 +65,30 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, onTabChange }) => {
                 <button
                   key={item.id}
                   onClick={() => handleSelectTab(item.id)}
-                  className={`px-3.5 py-2 rounded-md transition-all text-xs uppercase tracking-wider font-semibold whitespace-nowrap flex items-center gap-1.5 cursor-pointer ${
+                  className={`px-2.5 xl:px-3 py-2 rounded-md transition-all text-[11px] xl:text-xs uppercase tracking-wide font-semibold whitespace-nowrap shrink-0 cursor-pointer ${
                     isActive
                       ? isVelocity
                         ? 'bg-brandBlue text-white shadow-sm'
                         : 'bg-white/10 text-white shadow-inner border border-white/20'
-                      : 'text-slate-300 hover:text-white hover:bg-white/5'
+                      : isVelocity
+                        ? 'text-slate-200 hover:text-white hover:bg-brandBlue/20'
+                        : 'text-slate-300 hover:text-white hover:bg-white/5'
                   }`}
                 >
                   <span>{item.label}</span>
-                  {item.badge && !isActive && (
-                    <span className="text-[9px] font-mono px-1.5 py-0.2 text-brandBlue bg-brandBlue/15 rounded border border-brandBlue/30">
-                      {item.badge}
-                    </span>
-                  )}
                 </button>
               );
             })}
           </nav>
 
           {/* Zone 3: Primary Action & Mobile Toggle */}
-          <div className="flex items-center gap-3 shrink-0">
+          <div className="flex items-center gap-2 shrink-0">
             <button
               onClick={() => handleSelectTab('contact')}
-              className="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 text-xs font-bold uppercase tracking-wider text-white bg-brandRed hover:bg-[#8f1515] transition-colors rounded shadow-sm cursor-pointer whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brandRed focus:ring-offset-brandNavy"
+              className="hidden sm:inline-flex items-center gap-1.5 px-3.5 xl:px-4 py-2 text-[11px] xl:text-xs font-bold uppercase tracking-wider text-white bg-brandRed hover:bg-[#8f1515] transition-colors rounded shadow-sm cursor-pointer whitespace-nowrap shrink-0 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brandRed focus:ring-offset-brandNavy"
             >
               <span>Initiate Inquiry</span>
-              <ArrowUpRight className="w-4 h-4" />
+              <ArrowUpRight className="w-3.5 h-3.5 xl:w-4 xl:h-4" />
             </button>
 
             {/* Mobile Menu Button */}
