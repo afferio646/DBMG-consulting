@@ -103,46 +103,48 @@ export default function AiSolutions() {
           </div>
         </div>
 
-        {/* Section 3: AI-as-a-Service Model */}
-        <div className="bg-slate-900 text-white rounded-2xl p-8 lg:p-12 space-y-6 text-center max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold tracking-tight">The Turnkey AI-as-a-Service Model</h2>
-          <p className="text-slate-300 leading-relaxed max-w-3xl mx-auto">
+{/* 1. The Turnkey AI-as-a-Service Card */}
+        <div className="bg-[#0B1221] rounded-2xl p-8 sm:p-14 text-center max-w-5xl mx-auto shadow-xl">
+          <h2 className="text-2xl sm:text-4xl font-bold text-white mb-6">
+            The Turnkey AI-as-a-Service Model
+          </h2>
+          <p className="text-slate-300 max-w-3xl mx-auto mb-8 text-base sm:text-lg leading-relaxed">
             Skip the high cost, steep learning curve, and resource drain of hiring and managing internal AI teams. DBMG manages the entire lifecycle—from architecture and programming to full integration and ongoing management—allowing you to leverage advanced AI capabilities effortlessly.
           </p>
-          <div className="pt-4">
-         <a 
-  href="#contact"
-  className="inline-block bg-blue-600 hover:bg-blue-500 text-white font-semibold px-8 py-3 rounded-xl transition-colors shadow-lg text-center cursor-pointer"
->
-  Discuss Your Project
-</a>
- {/* Standalone Workshop Section */}
-<section className="py-16 sm:py-24 bg-slate-950 border-t border-slate-900">
-  <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-    
-    <span className="inline-block px-3.5 py-1.5 mb-6 text-xs font-semibold tracking-wider text-blue-400 uppercase bg-blue-500/10 rounded-full border border-blue-500/20">
-      Invitation-Only Exclusive Workshop
-    </span>
-    
-    <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-6">
-      Give Your Team AI Superpowers
-    </h2>
-    
-    <p className="max-w-2xl mx-auto text-base sm:text-lg text-slate-300 leading-relaxed mb-10">
-      You will gain a crystal-clear understanding of current AI capabilities, how they specifically benefit your industry&apos;s bottlenecks and manual workarounds, and how they create real superpowers for your employees—making them an even more integral, high-performing part of your business growth.
-    </p>
-    
-    <a
-      href="https://www.dbmgconsulting.com/#workshop"
-      className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-blue-600 hover:bg-blue-500 rounded-xl shadow-lg shadow-blue-600/30 transition-all duration-200 hover:-translate-y-0.5 cursor-pointer"
-    >
-      Get Access
-    </a>
-    
-  </div>
-</section>          
+          <a
+            href="#contact"
+            className="inline-block bg-blue-600 hover:bg-blue-500 text-white font-semibold px-8 py-3.5 rounded-xl transition-all"
+          >
+            Discuss Your Project
+          </a>
+        </div>
 
-          </div>
+        {/* 2. Separate Workshop Card */}
+        <div className="mt-12 bg-[#0B1221] rounded-2xl p-8 sm:p-14 text-center max-w-5xl mx-auto shadow-xl">
+          <span className="inline-block px-4 py-1.5 mb-6 text-xs font-semibold tracking-wider text-blue-400 uppercase bg-blue-500/10 rounded-full border border-blue-500/20">
+            Invitation-Only Exclusive Workshop
+          </span>
+
+          <h2 className="text-2xl sm:text-4xl font-bold text-white mb-6">
+            Give Your Team AI Superpowers
+          </h2>
+
+          <p className="text-slate-300 max-w-3xl mx-auto mb-8 text-base sm:text-lg leading-relaxed">
+            You will gain a crystal-clear understanding of current AI capabilities, how they specifically benefit your industry&apos;s bottlenecks and manual workarounds, and how they create real superpowers for your employees—making them an even more integral, high-performing part of your business growth.
+          </p>
+
+          <button
+            type="button"
+            onClick={() => {
+              window.location.href = 'https://www.dbmgconsulting.com/#workshop';
+              window.location.hash = 'workshop';
+              window.dispatchEvent(new HashChangeEvent('hashchange'));
+              window.scrollTo(0, 0);
+            }}
+            className="inline-block bg-blue-600 hover:bg-blue-500 text-white font-semibold px-8 py-3.5 rounded-xl transition-all cursor-pointer"
+          >
+            Get Access
+          </button>
         </div>
 
       </div>
