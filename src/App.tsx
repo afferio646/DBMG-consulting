@@ -18,24 +18,32 @@ import { WorkshopView } from './components/WorkshopView';
 import { ArrowUp } from 'lucide-react';
 
 export default function App() {
-  const isWorkshop = window.location.hash === '#workshop' || window.location.pathname === '/workshop';
-  if (isWorkshop) {
-    return <WorkshopView />;
-  }
-  const [activeTab, setActiveTab] = useState<NavTab>('home');
+  const getInitialTab = (): NavTab => {
+    if (window.location.pathname === '/workshop' || window.location.hash === '#workshop') {
+      return 'workshop';
+    }
+    const hash = window.location.hash.replace('#', '') as NavTab;
+    const validTabs: NavTab[] = ['home', 'about', 'industries', 'velocity-re', 'case-studies', 'contact', 'ai-solutions', 'workshop'];
+    return validTabs.includes(hash) ? hash : 'home';
+  };
+
+  const [activeTab, setActiveTab] = useState<NavTab>(getInitialTab);
   const [showScrollTop, setShowScrollTop] = useState(false);
 
-  // Sync with browser URL hash
+  // Sync with browser URL hash and always open new views at the top
   useEffect(() => {
     const handleHashChange = () => {
       const hash = window.location.hash.replace('#', '') as NavTab;
-      const validTabs: NavTab[] = ['home', 'about', 'industries', 'velocity-re', 'case-studies', 'contact', 'ai-solutions'];
+      const validTabs: NavTab[] = ['home', 'about', 'industries', 'velocity-re', 'case-studies', 'contact', 'ai-solutions', 'workshop'];
       if (validTabs.includes(hash)) {
         setActiveTab(hash);
+        window.scrollTo({ top: 0, behavior: 'auto' });
+      } else if (!hash) {
+        setActiveTab(window.location.pathname === '/workshop' ? 'workshop' : 'home');
+        window.scrollTo({ top: 0, behavior: 'auto' });
       }
     };
 
-    handleHashChange();
     window.addEventListener('hashchange', handleHashChange);
     return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
@@ -59,6 +67,10 @@ export default function App() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  if (activeTab === 'workshop') {
+    return <WorkshopView onTabChange={handleTabChange} />;
+  }
+
   return (
     <div className="min-h-screen flex flex-col bg-white text-slate-800 font-sans selection:bg-brandRed selection:text-white">
       {/* Sticky Navigation Bar configured in Deep Sapphire Navy (#021b4a) */}
@@ -72,7 +84,7 @@ export default function App() {
         {activeTab === 'velocity-re' && <VelocityREView onTabChange={handleTabChange} />}
         {activeTab === 'case-studies' && <CaseStudiesView onTabChange={handleTabChange} />}
         {activeTab === 'contact' && <ContactView onTabChange={handleTabChange} />}
-        {activeTab === 'ai-solutions' && <AiSolutions />}
+        {activeTab === 'ai-solutions' && <AiSolutions onTabChange={handleTabChange} />}
       </main>
 
       {/* Corporate Executive Footer */}
