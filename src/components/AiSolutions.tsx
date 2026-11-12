@@ -116,27 +116,32 @@ export default function AiSolutions() {
 >
   Discuss Your Project
 </a>
-            {/* Workshop Section */}
-<div className="mt-12 p-8 sm:p-12 bg-slate-900/80 border border-slate-800 rounded-2xl shadow-xl text-center backdrop-blur-sm">
-  <span className="inline-block px-3 py-1 mb-4 text-xs font-semibold tracking-wider text-blue-400 uppercase bg-blue-500/10 rounded-full border border-blue-500/20">
-    Invitation-Only Exclusive Workshop
-  </span>
-  
-  <h3 className="text-2xl sm:text-3xl font-bold text-white tracking-tight mb-4">
-    Give Your Team AI Superpowers
-  </h3>
-  
-  <p className="max-w-2xl mx-auto text-base sm:text-lg text-slate-300 leading-relaxed mb-8">
-    You will gain a crystal-clear understanding of current AI capabilities, how they specifically benefit your industry&apos;s bottlenecks and manual workarounds, and how they create real superpowers for your employees—making them an even more integral, high-performing part of your business growth.
-  </p>
-  
-  <a
-    href="https://www.dbmgconsulting.com/#workshop"
-    className="inline-flex items-center justify-center px-8 py-3.5 text-base font-semibold text-white bg-blue-600 hover:bg-blue-500 rounded-xl shadow-lg shadow-blue-600/30 transition-all duration-200 hover:-translate-y-0.5"
-  >
-    Get Access
-  </a>
-</div>
+ {/* Standalone Workshop Section */}
+<section className="py-16 sm:py-24 bg-slate-950 border-t border-slate-900">
+  <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    
+    <span className="inline-block px-3.5 py-1.5 mb-6 text-xs font-semibold tracking-wider text-blue-400 uppercase bg-blue-500/10 rounded-full border border-blue-500/20">
+      Invitation-Only Exclusive Workshop
+    </span>
+    
+    <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-6">
+      Give Your Team AI Superpowers
+    </h2>
+    
+    <p className="max-w-2xl mx-auto text-base sm:text-lg text-slate-300 leading-relaxed mb-10">
+      You will gain a crystal-clear understanding of current AI capabilities, how they specifically benefit your industry&apos;s bottlenecks and manual workarounds, and how they create real superpowers for your employees—making them an even more integral, high-performing part of your business growth.
+    </p>
+    
+    <a
+      href="https://www.dbmgconsulting.com/#workshop"
+      className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-blue-600 hover:bg-blue-500 rounded-xl shadow-lg shadow-blue-600/30 transition-all duration-200 hover:-translate-y-0.5 cursor-pointer"
+    >
+      Get Access
+    </a>
+    
+  </div>
+</section>          
+
           </div>
         </div>
 
